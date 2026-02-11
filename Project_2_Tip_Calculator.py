@@ -26,4 +26,13 @@ else:
     amount = bill
    
 amount = "{:.2f}".format(amount)
-print(f"Each person pays ${amount}.")
+print()
+print("------------Your Bill Status----------------")
+print(f"Total amount: ${bill}")
+if tip_choose == "Y":
+    print(f"Tip: {tip}%")
+if split != 0:
+    print(f"Bill is split among: {split}")
+    print(f"Each person pays ${amount}.")
+else:
+    print(f"Amount to pay: ${amount}.")
