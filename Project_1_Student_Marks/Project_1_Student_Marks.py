@@ -1,7 +1,5 @@
 print("----------------Student Marks Manager----------------")
 
-
-
     
 # Asking user to enter student's name:
 # Asking user to enter 3 subjects marks that is obtained for the student:
@@ -27,10 +25,19 @@ def average():
 def result():
     average_marks = average()
     if (average_marks >= 40):
-        print(name,  "Your score is", average_marks)
-        print('"PASS"')
+        print(name,  "Your score is", average_marks, "PASS")
+        return "PASS"
     else:
-        print(name,  "Your score is", average_marks)
-        print('"FAIL"')
+        print(name,  "Your score is", average_marks, "FAIL")
+        return "FAIL"
 
 result()
+
+with open("Python_Small_Projects/Project_1_Student_Marks/student_details.txt", "a") as f:
+    f.write( "Student Name : " + name + " | "),
+    f.write( "Physics : " + str(sub1) + " | "),
+    f.write( "Chemistry : " + str(sub2) + " | "),
+    f.write( "Mathematics : " + str(sub3) + " | "),
+    f.write( "Total Marks : " + str(total()) + " | "),
+    f.write( "Average : " + str(average()) + " | "),
+    f.write( "Result : " + str(result()) + "\n")

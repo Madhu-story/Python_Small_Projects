@@ -1,0 +1,2 @@
+Student Name : Shwetha | Physics : 86 | Chemistry : 92 | Mathematics : 79 | Total Marks : 257 | Average : 85.67 | Result : PASS
+Student Name : Rahul | Physics : 76 | Chemistry : 83 | Mathematics : 75 | Total Marks : 234 | Average : 78.0 | Result : PASS
